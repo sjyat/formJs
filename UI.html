@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div>
+      <form>
+        <h2>#1 Contar Caracteres</h2>
+        <input type="text" id="fname" placeholder="ingrese texto" /><br />
+        <br />
+        <button type="button" onclick="contarCaracteres()">
+          Contar Caracteres
+        </button>
+        <br />
+      </form>
+    </div>
+    <hr />
+
+    <div>
+      <form>
+        <h2>#2 Recortar Caracteres</h2>
+        <input type="text" id="fname2" placeholder="ingrese texto" /><br />
+        <input type="text" id="inicio" placeholder="Inicio texto" /><br />
+        <input type="text" id="fin" placeholder="fin texto" /><br />
+
+        <br />
+        <button type="button" onclick="RecortarCarecteres()">
+          RecortarCarecteres
+        </button>
+      </form>
+    </div>
+    <hr />
+
+    <div>
+      <form>
+        <h2>#3 dividirCadena</h2>
+        <input type="text" id="fname3" placeholder="ingrese texto" /><br />
+
+        <br />
+        <button type="button" onclick="RecortarCarecteres()">
+          dividirCadena
+        </button>
+      </form>
+    </div>
+    <hr />
+
+    <div>
+      <form>
+        <h2>#4 calcule el precio de un producto aplicando un descuento</h2>
+        <input type="number" id="precio" placeholder="ingrese precio" /><br />
+        <input
+          type="number"
+          id="descuento"
+          placeholder="Inicio descuento"
+        /><br />
+
+        <br />
+        <button type="button" onclick="calcularPrecio()">calcularPrecio</button>
+      </form>
+    </div>
+    <hr />
+
+    <div>
+      <form>
+        <h2>
+          #6 Programa que convierte decimal a romano hasta el número 1000.
+          mifuncion(15) devolver: el 15 es XV
+        </h2>
+
+        <input type="number" id="entero" placeholder="ingrese numero" /><br />
+        <p id="displayName"></p>
+
+        <br />
+        <button type="button" onclick="conversion()">Convertir a romano</button>
+      </form>
+    </div>
+    <hr />
+
+    <div>
+      <form>
+        <h2>
+          #7 programa convierte decimal a binario. ejemplo: 1000 = 1111101000
+        </h2>
+
+        <input type="number" id="decimal" placeholder="ingrese decimal" /><br />
+        <p id="displayName"></p>
+
+        <br />
+        <button type="button" onclick="convertToBinary1()">
+          Convertir decimal a binario
+        </button>
+      </form>
+    </div>
+    <hr />
+
+    <div>
+      <form>
+        <h2>
+          8 Programa que devuelva el número de vocales de una cadena de texto.
+          Ejemplo: "Hola Mundo" = 4 vocales.
+        </h2>
+
+        <input type="text" id="vocales" placeholder="ingrese texto" /><br />
+        <p id="displayName"></p>
+
+        <br />
+        <button type="button" onclick="contarVocales()">
+          Numero de vocales de una cadena
+        </button>
+      </form>
+    </div>
+    <hr />
+
+    <div>
+      <form>
+        <h2>#9 Programa que valide si una palabra es palíndromo</h2>
+
+        <input type="text" id="palin" placeholder="ingrese texto" /><br />
+        <p id="displayName"></p>
+
+        <br />
+        <button type="button" onclick="palindromo()">palindrome</button>
+      </form>
+    </div>
+    <hr />
+
+    <div>
+      <form>
+        <h2>10 Programa que elimine los espacios de una cadena de texto</h2>
+
+        <input type="text" id="remover" placeholder="ingrese texto" /><br />
+        <p id="displayName"></p>
+
+        <br />
+        <button type="button" onclick="removeSpacesFromString()">
+          Remover espacios
+        </button>
+      </form>
+    </div>
+    <hr />
+
+    <div>
+      <form>
+        <h2>
+          #11 Programa que tome la primera letra de cada palabra y lo devuelva
+          en mayúsculas.
+        </h2>
+
+        <input type="text" id="cad" placeholder="ingrese texto" /><br />
+        <p id="displayName"></p>
+
+        <br />
+        <button type="button" onclick="primeraletra()">
+          primera letra Mayuscula
+        </button>
+      </form>
+    </div>
+    <hr />
+
+    <div>
+      <form>
+        <h2>
+          #12 Programa que devuelva la cantidad de palabras de una cadena de
+          texto
+        </h2>
+
+        <input type="text" id="cadd" placeholder="ingrese texto" /><br />
+        <p id="displayName"></p>
+
+        <br />
+        <button type="button" onclick="CantidadPalabras()">
+          Cantidad de Palabras
+        </button>
+      </form>
+    </div>
+    <hr />
+
+    <div>
+      <form>
+        <h2>
+          #12 Programa que devuelva la cantidad de palabras de una cadena de
+          texto
+        </h2>
+
+        <input type="text" id="cadd" placeholder="ingrese texto" /><br />
+        <p id="displayName"></p>
+
+        <br />
+        <button type="button" onclick="CantidadPalabras()">
+          Cantidad de Palabras
+        </button>
+      </form>
+    </div>
+    <hr />
+
+    <div>
+      <form>
+        <h2>
+          #13 Programa que devuelva el texto con la primera letra de cada
+          palabra en mayúscula
+        </h2>
+
+        <input type="text" id="oracion" placeholder="ingrese texto" /><br />
+        <p id="displayName"></p>
+
+        <br />
+        <button type="button" onclick="palabraMayus()">
+          Primera letra mayuscula
+        </button>
+      </form>
+    </div>
+    <hr />
+
+    <div>
+      <form>
+        <h2>
+          #14 Programa que devuelva la cadena de texto invertida. Ejemplo: "Hola
+          Mundo" = "odnuM aloH".
+        </h2>
+
+        <input type="text" id="invertir" placeholder="ingrese texto" /><br />
+        <p id="displayName"></p>
+
+        <br />
+        <button type="button" onclick="invertirCadena()">invertirCadena</button>
+      </form>
+    </div>
+    <hr />
+
+    <div>
+      <form>
+        <h2>
+          #16 Programa que pase un arreglo de edades y devuelva la mayor y la
+          menor. Ejemplo: edades(10, 20, 30, 40, 50) = "La edad mayor es 50 y la
+          edad menor es 10
+        </h2>
+
+        <input type="text" id="arr" placeholder="ingrese texto" /><br />
+        <p id="displayName"></p>
+
+        <br />
+        <button type="button" onclick="arreglo()">Mayor y menor edad</button>
+      </form>
+    </div>
+    <hr />
+
+    <div>
+      <form>
+        <h2>#17 programa de escala de notas de 0 a 10</h2>
+
+        <input type="text" id="nts" placeholder="ingrese texto" /><br />
+        <p id="displayName"></p>
+
+        <br />
+        <button type="button" onclick="notas()">Notas</button>
+      </form>
+    </div>
+    <hr />
+
+    <div>
+      <form>
+        <h2>
+          #18 programa que devuelva el número de cifras de un número entero.
+          Ejemplo: 1234 = 4 cifras.
+        </h2>
+
+        <input type="text" id="digitos" placeholder="ingrese texto" /><br />
+        <p id="displayName"></p>
+
+        <br />
+        <button type="button" onclick="contardigitos()">Contar digitos</button>
+      </form>
+    </div>
+    <hr />
+
+    <div>
+      <form>
+        <h2>#19 programa que muestre los numeros primos de 1 a 1000.</h2>
+
+        <input type="text" id="prim" placeholder="ingrese texto" /><br />
+        <p id="displayName"></p>
+
+        <br />
+        <button type="button" onclick="Primo()">calcular primos</button>
+      </form>
+    </div>
+    <hr />
+
+    <div>
+      <form>
+        <h2>
+          #20 Programa que realice el juego de piedra, papel o tijera. Ejemplo:
+          "Piedra" > "Tijera", "Tijera" > "Papel", "Papel" > "Piedra".
+        </h2>
+
+        <input type="text" id="j" placeholder="ingrese texto" /><br />
+        <p id="displayName"></p>
+
+        <br />
+        <button type="button" onclick="juego()">juego</button>
+      </form>
+    </div>
+    <hr />
+  </body>
+
+  <script src="tarea.js"></script>
+</html>
